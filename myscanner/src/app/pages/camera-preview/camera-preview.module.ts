@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PdfPagePageRoutingModule } from './pdf-page-routing.module';
+import { CameraPreviewPageRoutingModule } from './camera-preview-routing.module';
 
-import { PdfPagePage } from './pdf-page.page';
+import { CameraPreviewPage } from './camera-preview.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PdfPagePageRoutingModule
+    CameraPreviewPageRoutingModule
   ],
-  declarations: [PdfPagePage]
+  declarations: [CameraPreviewPage]
 })
-export class PdfPagePageModule {}
+export class CameraPreviewPageModule {}

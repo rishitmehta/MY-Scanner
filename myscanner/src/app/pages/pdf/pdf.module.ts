@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EditPagePageRoutingModule } from './edit-page-routing.module';
+import { PdfPageRoutingModule } from './pdf-routing.module';
 
-import { EditPagePage } from './edit-page.page';
+import { PdfPage } from './pdf.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EditPagePageRoutingModule
+    PdfPageRoutingModule
   ],
-  declarations: [EditPagePage]
+  declarations: [PdfPage]
 })
-export class EditPagePageModule {}
+export class PdfPageModule {}

@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CameraPriviewPage } from './camera-priview.page';
+import { EditPage } from './edit.page';
 
-describe('CameraPriviewPage', () => {
-  let component: CameraPriviewPage;
-  let fixture: ComponentFixture<CameraPriviewPage>;
+describe('EditPage', () => {
+  let component: EditPage;
+  let fixture: ComponentFixture<EditPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CameraPriviewPage ],
+      declarations: [ EditPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CameraPriviewPage);
+    fixture = TestBed.createComponent(EditPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

@@ -12,25 +12,25 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'home-page',
-    loadChildren: () => import('./pages/home-page/home-page.module').then( m => m.HomePagePageModule)
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'pdf-page',
-    loadChildren: () => import('./pages/pdf-page/pdf-page.module').then( m => m.PdfPagePageModule)
+    path: 'camera',
+    loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
   },
   {
-    path: 'edit-page',
-    loadChildren: () => import('./pages/edit-page/edit-page.module').then( m => m.EditPagePageModule)
+    path: 'camera-preview',
+    loadChildren: () => import('./pages/camera-preview/camera-preview.module').then( m => m.CameraPreviewPageModule)
   },
   {
-    path: 'camera-priview',
-    loadChildren: () => import('./pages/camera-priview/camera-priview.module').then( m => m.CameraPriviewPageModule)
+    path: 'edit',
+    loadChildren: () => import('./pages/edit/edit.module').then( m => m.EditPageModule)
   },
   {
-    path: 'camera-page',
-    loadChildren: () => import('./pages/camera-page/camera-page.module').then( m => m.CameraPagePageModule)
-  },
+    path: 'pdf',
+    loadChildren: () => import('./pages/pdf/pdf.module').then( m => m.PdfPageModule)
+  }
 ];
 
 @NgModule({
