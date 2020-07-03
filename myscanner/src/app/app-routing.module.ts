@@ -3,17 +3,13 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'splash',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'splash',
     pathMatch: 'full'
-  },
-  {
-    path: 'splash',
-    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
   },
   {
     path: 'home-page',
@@ -28,12 +24,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/edit-page/edit-page.module').then( m => m.EditPagePageModule)
   },
   {
-    path: 'camer-page',
-    loadChildren: () => import('./pages/camer-page/camer-page.module').then( m => m.CamerPagePageModule)
-  },
-  {
     path: 'camera-priview',
     loadChildren: () => import('./pages/camera-priview/camera-priview.module').then( m => m.CameraPriviewPageModule)
+  },
+  {
+    path: 'camera-page',
+    loadChildren: () => import('./pages/camera-page/camera-page.module').then( m => m.CameraPagePageModule)
   },
 ];
 
