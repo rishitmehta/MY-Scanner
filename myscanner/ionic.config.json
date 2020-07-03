@@ -1,0 +1,7 @@
+{
+  "name": "myscanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
