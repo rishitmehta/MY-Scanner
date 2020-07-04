@@ -1,5 +1,11 @@
+.menulist{
+    --background : grey;
+    --color: grey;
+}
+
 .pdfname{
     font-size: 20px;
+    padding-top: 10px;
 }
 
 .pdftime{
@@ -9,5 +15,19 @@
 }
 
 .pdfbtns{
-    padding-top: 60px;
+    padding-top: 55px;
 }
+
+.pdfcard{
+    border-width: 2px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 0px;
+}
+
+.pdfimage{
+text-align: center;
+vertical-align: middle;
+}
+
