@@ -38,10 +38,14 @@ ion-col{
     }
     
 }
-.xyz{
-    // position: absolute;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+ion-footer{
+    background: transparent;
+    .xyz{
+        // position: absolute;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
 }
