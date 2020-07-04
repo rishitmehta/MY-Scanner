@@ -1,9 +1,71 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-menu side="start" content-id="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>My Scanner</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content background="secondary">
+    <ion-list>
+      <ion-item lines="none">
+        <ion-icon name="camera-outline" slot="start"></ion-icon>
+        <ion-label>Scans</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="settings-outline" slot="start"></ion-icon>
+        <ion-label>Settings</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+        <ion-label>About Us</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 
-<ion-content>
-
-</ion-content>
+<div class="ion-page" id="main-content">
+  <ion-header >
+    <ion-toolbar color="primary" >
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>My Scanner</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding" color="secondary">
+    <ion-card color="transparent" class="ion-no-padding">
+      <ion-grid>
+        <ion-row>
+          <ion-col >
+            <img src="../assets/Rectangle 7.png">
+          </ion-col>
+          <ion-col class="ion-no-padding">
+            <ion-row class="pdfname">
+              Book Scan 1
+            </ion-row>
+            <ion-row class="pdftime">
+              Just Now
+            </ion-row>
+            <ion-row class="pdfbtns ion-no-padding">
+                <ion-col size="4" >
+                  <ion-buttons>
+                    <ion-icon size="large" name="share-social-outline"></ion-icon>
+                  </ion-buttons>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-buttons>
+                    <ion-icon size="large" name="pencil-outline"></ion-icon>
+                  </ion-buttons>
+                </ion-col>
+                <ion-col size="4">
+                  <ion-buttons>
+                    <ion-icon size="large" name="trash-outline"></ion-icon>
+                  </ion-buttons>
+                </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+   </ion-card>
+  
+  </ion-content>
+</div>
