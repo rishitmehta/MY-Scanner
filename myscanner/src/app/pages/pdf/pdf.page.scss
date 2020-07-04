@@ -1,6 +1,4 @@
 ion-toolbar{
-    --background:#303030;
-    color: #ffffff;
     padding-left: 10px;
     padding-right: 10px;
     ion-button{
@@ -9,11 +7,12 @@ ion-toolbar{
     }
 }
 ion-content{
-    --background: #000000;
     ion-card{
     margin: 0;
-    padding: 15px;
-    background-color: #000000;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
     overflow: visible;
     }
 }
@@ -46,8 +45,8 @@ ion-col{
 
 .xyz{
     z-index: 1;
-    --background: white;
-    color: black;
+    --background: #424242;
+    color: white;
     font-size: large;
     position: absolute;
     bottom: 20px;
