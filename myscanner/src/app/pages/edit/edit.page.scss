@@ -1,4 +1,5 @@
-ion-toolbar{
+ion-header{
+    ion-toolbar{
     padding-left: 10px;
     padding-right: 10px;
     ion-button{
@@ -6,17 +7,27 @@ ion-toolbar{
         --box-shadow: none;
     }
 }
+}
 
 ion-footer{
     ion-toolbar{
         ion-grid{
+            padding: 0px;
             ion-row{
-                ion-col{
-                    justify-items: center;
-                    ion-row{
-                        justify-content: center;
-                        font-size: 10px;
-                        padding-top: 5px;
+                justify-content: center;
+                ion-button{
+                    --background:none;
+                    --box-shadow: none;
+                    height: max-content;
+                    ion-col{
+                        justify-items: center;
+                        padding: 0px;
+                        padding-bottom: 10px;
+                        ion-row{
+                            justify-content: center;
+                            font-size: 10px;
+                            padding-top: 5px;
+                        }
                     }
                 }
             }
