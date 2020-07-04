@@ -30,6 +30,14 @@ const routes: Routes = [
   {
     path: 'pdf',
     loadChildren: () => import('./pages/pdf/pdf.module').then( m => m.PdfPageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./pages/about-us/about-us.module').then( m => m.AboutUsPageModule)
   }
 ];
 
