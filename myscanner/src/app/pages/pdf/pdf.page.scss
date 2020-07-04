@@ -23,14 +23,13 @@ ion-col{
         background: transparent;
         border: solid;
         border-color: #6b6a6a;
-        border-radius: 15px;
+        border-radius: 10px;
         border-width: 2px;
         padding: 5px;
         ion-img{
         padding: 4px;
         }
         ion-buttons{
-            float: right;
             position: absolute;
             z-index: 0;
             ion-button{
