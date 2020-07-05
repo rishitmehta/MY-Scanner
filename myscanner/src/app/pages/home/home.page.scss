@@ -1,3 +1,13 @@
+.ionList{
+    background: var(--ion-secondary-color);
+    ion-item{
+        --background: primary;
+        color: #ffffff;
+        ion-icon{
+            color: #ffffff;
+        }
+    }
+}
 .menulist{
     --background : grey;
     --color: grey;

@@ -1,3 +1,4 @@
+import { CameraService } from './../../services/camera.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CameraPage implements OnInit {
 
-  constructor() { }
+  constructor(public cameraservice: CameraService) { }
 
   ngOnInit() {
   }
