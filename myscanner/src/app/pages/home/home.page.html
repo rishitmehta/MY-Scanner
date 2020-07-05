@@ -32,8 +32,8 @@
     <ion-card color="primary" class="pdfcard ion-no-padding">
       <ion-grid>
         <ion-row>
-          <ion-col >
-            <img src="../assets/Rectangle 7.png">
+          <ion-col class="pdfimage">
+            <img class="previewimage" src="../assets/Rectangle 7.png">
           </ion-col>
           <ion-col class="ion-no-padding">
             <ion-row class="pdfname">
@@ -45,30 +45,38 @@
             <ion-row class="pdfbtns ion-no-padding">
                 <ion-col size="4" >
                   <ion-buttons>
-                    <ion-icon size="large" color="tertiary" name="share-social-outline"></ion-icon>
+                    <ion-button>
+                      <ion-icon size="large" color="tertiary" name="share-social-outline"></ion-icon>
+                    </ion-button>
                   </ion-buttons>
                 </ion-col>
                 <ion-col size="4">
                   <ion-buttons>
-                    <ion-icon size="large" color="tertiary" name="pencil-outline"></ion-icon>
+                    <ion-button>
+                      <ion-icon size="large" color="tertiary" name="pencil-outline"></ion-icon>
+                    </ion-button>
+                    
                   </ion-buttons>
                 </ion-col>
                 <ion-col size="4">
                   <ion-buttons>
-                    <ion-icon size="large" color="tertiary" name="trash-outline"></ion-icon>
+                    <ion-button>
+                      <ion-icon size="large" color="tertiary" name="trash-outline"></ion-icon>
+                    </ion-button>
+                    
                   </ion-buttons>
                 </ion-col>
             </ion-row>
           </ion-col>
         </ion-row>
       </ion-grid>
-   </ion-card>
+    </ion-card>
    
-   <ion-fab horizontal="end" vertical="bottom" slot="fixed" class="ion-padding">
-    <ion-fab-button color="tertiary">
+    <ion-fab horizontal="end" vertical="bottom" slot="fixed" class="ion-padding">
+      <ion-fab-button color="tertiary">
       <ion-icon name="camera" color="dark"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+      </ion-fab-button>
+    </ion-fab>
   
   </ion-content>
 </div>

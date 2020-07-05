@@ -26,15 +26,22 @@
 
 .pdfbtns{
     padding-top: 55px;
+    text-align: center;
 }
 
 .pdfcard{
     border-radius: 10px;
     margin: 0px;
+    height: fit-content;
 }
 
 .pdfimage{
-text-align: center;
-vertical-align: middle;
+    text-align: center;
+    width: 40px;
+    height: 20px;
 }
 
+.previewimage{
+    height: max-content;
+    width: fit-content;
+}
