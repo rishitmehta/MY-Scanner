@@ -16,17 +16,20 @@
 .pdfname{
     font-size: 20px;
     padding-top: 10px;
+    padding-left: 15px;
 }
 
 .pdftime{
     padding-top: 5px;
     font-weight: lighter;
     font-size: 14px;
+    padding-left: 15px;
 }
 
 .pdfbtns{
-    padding-top: 55px;
+    padding-top: 20px;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .pdfcard{
@@ -37,11 +40,9 @@
 
 .pdfimage{
     text-align: center;
-    width: 40px;
-    height: 20px;
+    height: 120px;
 }
 
 .previewimage{
-    height: max-content;
-    width: fit-content;
+    max-height: 100%;
 }
