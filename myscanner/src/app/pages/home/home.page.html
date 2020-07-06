@@ -73,7 +73,7 @@
     </ion-card>
    
     <ion-fab horizontal="end" vertical="bottom" slot="fixed" class="ion-padding">
-      <ion-fab-button color="tertiary">
+      <ion-fab-button (click)="cameraservice.addNewToGallery()" color="tertiary">
       <ion-icon name="camera" color="dark"></ion-icon>
       </ion-fab-button>
     </ion-fab>

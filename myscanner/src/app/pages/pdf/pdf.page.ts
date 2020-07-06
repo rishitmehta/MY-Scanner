@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CameraService } from 'src/app/services/camera.service';
 
 @Component({
   selector: 'app-pdf',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PdfPage implements OnInit {
 
-  constructor() { }
+  constructor(public cameraservice: CameraService) { }
 
   ngOnInit() {
   }

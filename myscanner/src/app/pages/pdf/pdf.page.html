@@ -16,9 +16,9 @@
   <ion-card color="secondary">
       <ion-grid>
         <ion-row>
-          <ion-col  *ngFor="let i of [].constructor(10)" size="12" size-md="6" size-lg="6" size-xs="6">
+          <ion-col  *ngFor="let photo of cameraservice.photos; index as position" size="12" size-md="6" size-lg="6" size-xs="6">
             <ion-card>
-              <ion-img src="assets/Rectangle_7.png"></ion-img>
+              <ion-img src="{{ photo.webviewPath }}"></ion-img>
             </ion-card>
           </ion-col>
         </ion-row>
