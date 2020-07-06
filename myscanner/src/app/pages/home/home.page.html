@@ -29,13 +29,14 @@
   </ion-header>
 
   <ion-content class="ion-padding" color="secondary">
-    <ion-card color="primary" class="pdfcard ion-no-padding">
+
+    <ion-button class="pdfbutton" expand="block" *ngFor="let i of [].constructor(10)">
       <ion-grid>
         <ion-row>
-          <ion-col class="pdfimage">
+          <ion-col class="pdfimage" size="4">
             <img class="previewimage" src="../assets/Rectangle 7.png">
           </ion-col>
-          <ion-col class="ion-no-padding">
+          <ion-col class="ion-no-padding" size="8">
             <ion-row class="pdfname">
               Book Scan 1
             </ion-row>
@@ -46,14 +47,14 @@
                 <ion-col size="4" >
                   <ion-buttons>
                     <ion-button>
-                      <ion-icon size="large" color="tertiary" name="share-social-outline"></ion-icon>
+                      <ion-icon color="tertiary" name="share-social-outline"></ion-icon>
                     </ion-button>
                   </ion-buttons>
                 </ion-col>
                 <ion-col size="4">
                   <ion-buttons>
                     <ion-button>
-                      <ion-icon size="large" color="tertiary" name="pencil-outline"></ion-icon>
+                      <ion-icon color="tertiary" name="pencil-outline"></ion-icon>
                     </ion-button>
                     
                   </ion-buttons>
@@ -61,7 +62,7 @@
                 <ion-col size="4">
                   <ion-buttons>
                     <ion-button>
-                      <ion-icon size="large" color="tertiary" name="trash-outline"></ion-icon>
+                      <ion-icon color="tertiary" name="trash-outline"></ion-icon>
                     </ion-button>
                     
                   </ion-buttons>
@@ -70,8 +71,8 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-    </ion-card>
-   
+    </ion-button>
+  
     <ion-fab horizontal="end" vertical="bottom" slot="fixed" class="ion-padding">
       <ion-fab-button (click)="cameraservice.addNewToGallery()" color="tertiary">
       <ion-icon name="camera" color="dark"></ion-icon>

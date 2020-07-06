@@ -16,32 +16,52 @@
 .pdfname{
     font-size: 20px;
     padding-top: 10px;
+    padding-left: 15px;
 }
 
 .pdftime{
     padding-top: 5px;
     font-weight: lighter;
     font-size: 14px;
+    padding-left: 15px;
 }
 
 .pdfbtns{
-    padding-top: 55px;
+    padding-top: 20px;
     text-align: center;
+    padding-bottom: 5px;
+    ion-col{
+        ion-buttons{
+            ion-button{
+                ion-icon{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
 }
 
 .pdfcard{
     border-radius: 10px;
     margin: 0px;
     height: fit-content;
+    align-items: center;
 }
 
 .pdfimage{
     text-align: center;
-    width: 40px;
-    height: 20px;
+    height: 120px;
+    display: flex!important;
+    align-content: center!important;
+    align-items: center!important;
 }
 
 .previewimage{
-    height: max-content;
-    width: fit-content;
+    max-height: 100%;
+}
+
+.pdfbutton{
+    height: fit-content;
+    align-items: center;
+    padding-bottom: 16px;
 }
