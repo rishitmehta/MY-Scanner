@@ -20,10 +20,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
   },
   {
-    path: 'camera-preview',
-    loadChildren: () => import('./pages/camera-preview/camera-preview.module').then( m => m.CameraPreviewPageModule)
-  },
-  {
     path: 'edit',
     loadChildren: () => import('./pages/edit/edit.module').then( m => m.EditPageModule)
   },

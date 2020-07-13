@@ -34,7 +34,7 @@
       <ion-grid>
         <ion-row>
           <ion-col class="pdfimage" size="4">
-            <img class="previewimage" src="../assets/Rectangle 7.png">
+            <ion-img class="previewimage" src="{{ photo.base64 ? photo.base64 : photo.webviewPath }}"></ion-img>
           </ion-col>
           <ion-col class="ion-no-padding" size="8">
             <ion-row class="pdfname">
