@@ -12,5 +12,7 @@ export class CameraPage implements OnInit {
 
   ngOnInit() {
   }
-
+ 
 }
+// The Master
+// Key System

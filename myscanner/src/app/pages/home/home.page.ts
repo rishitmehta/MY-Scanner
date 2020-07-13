@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { CameraService } from 'src/app/services/camera.service';
 
 @Component({
   selector: 'app-home',
@@ -8,23 +9,9 @@ import { MenuController } from '@ionic/angular';
 })
 export class HomePage implements OnInit {
 
-  constructor( private menu: MenuController) { }
+  constructor( private menu: MenuController,public cameraservice: CameraService) { }
 
   ngOnInit() {
-  }
-
-  openFirst() {
-    this.menu.enable(true, 'first');
-    this.menu.open('first');
-  }
-
-  openEnd() {
-    this.menu.open('end');
-  }
-
-  openCustom() {
-    this.menu.enable(true, 'custom');
-    this.menu.open('custom');
   }
 
 }

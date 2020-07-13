@@ -8,6 +8,7 @@ const { Camera, Filesystem, Storage } = Plugins;
 })
 export class CameraService {
 
+  public photos: Photo[] = [];
   constructor() { }
 
   public async addNewToGallery() {
@@ -17,5 +18,15 @@ export class CameraService {
       source: CameraSource.Camera, 
       quality: 100 
     });
+    this.photos.unshift({
+    filepath: "soon...",
+    webviewPath: capturedPhoto.webPath
+  });
   }
+}
+
+interface Photo {
+  filepath: string;
+  webviewPath: string;
+  base64?: string;
 }
